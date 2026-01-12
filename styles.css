@@ -1,0 +1,87 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: #f6f6fb;
+  color: #1f1f2e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.puzzle {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(31, 31, 46, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.puzzle__prompt {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.puzzle__label {
+  font-weight: 600;
+}
+
+.puzzle__input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5f0;
+  font-size: 1rem;
+}
+
+.puzzle__button {
+  align-self: flex-start;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: none;
+  background-color: #5b50d6;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.puzzle__button:hover {
+  background-color: #4a40b3;
+}
+
+.feedback {
+  min-height: 24px;
+}
+
+.feedback__text {
+  margin: 0;
+  font-weight: 600;
+}
+
+.feedback__text.correct {
+  color: #2a7a3b;
+}
+
+.feedback__text.incorrect {
+  color: #b42318;
+}
